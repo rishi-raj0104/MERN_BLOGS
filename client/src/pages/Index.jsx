@@ -51,22 +51,24 @@ const Index = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight flex items-center justify-center gap-3">
-              <span className="whitespace-nowrap">Where Ideas Come to</span>
-              {/* "Life" pill-style gradient, now exactly matching the heading's text size */}
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6 leading-tight flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-center">
+              <span className="whitespace-normal break-words leading-tight">
+                Where Ideas Come to
+              </span>
+              {/* "Life" pill-style gradient, now exactly matching the heading's text size and responsive for mobile */}
               <span
-                className="inline-block font-bold px-4 py-1 rounded-lg ml-2 text-4xl md:text-6xl lg:text-7xl"
+                className="inline-block font-bold px-3 py-1 rounded-lg ml-0 sm:ml-2 text-2xl xs:text-3xl sm:text-4xl md:text-6xl lg:text-7xl"
                 style={{
-                  background:
-                    "linear-gradient(91deg, #a692f6 0%, #f676ae 100%)",
+                  background: "linear-gradient(91deg, #a692f6 0%, #f676ae 100%)",
                   color: "#fff",
                   fontFamily: "inherit",
                   boxShadow: "0 1px 6px 0 rgba(116,69,226,0.12)",
                   lineHeight: 1.2,
                   letterSpacing: "normal",
-                  minWidth: 56,
+                  minWidth: 40,
                   textAlign: "center",
                   verticalAlign: "middle",
+                  display: "inline-block",
                 }}
                 aria-label="Life"
               >
